@@ -127,26 +127,21 @@ section {
 .heart {
   color: red;
 }
-.intro {
-  text-align: center;
-}
 .intro p {
-  line-height: 1.7;
-  color: #39a6b2;
   width: 80%;
-  font-size: 20px;
   margin: 0 auto;
-}
-.steps {
   text-align: center;
-  background: #fce138;
+  line-height: 1.7;
+  font-size: 20px;
+  color: #39a6b2;
 }
 .section-title {
-  font-size: 55px;
-  display: inline-block;
-  padding: 0 100px 20px 100px;
+  width: 50%;
+  padding-bottom: 20px;
+  text-align: center;
+  margin: 0 auto 35px auto;
   border-bottom: 3px solid;
-  margin-bottom: 35px;
+  font-size: 55px;
   color: #024e76;
 }
 .primary-border {
@@ -155,29 +150,50 @@ section {
 .secondary-border {
   border-color: #39a6b2;
 }
-.steps div {
-  margin-bottom: 80px;
+.step {
+  margin: 50px auto;
+  padding-bottom: 50px;
+  width: 80%;
+  border-bottom: 1px solid #39a6b2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background: #fce138;
 }
-.steps img {
-  width: 15%;
-  margin: 10px 0;
+.step-img {
+flex: 1 12%;
+margin-right: 20px;
 }
-.steps h3 {
+.step-img img {
+  max-width: 100%;
+}
+.step-text {
+  flex: 12;
+}
+.step-info {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 2 70%;
+  align-items: center;  
+}
+
+.step h3 {
+  flex: 1 30%;
   color: #024e76;
   font-size: 46px;
-  margin-top: 10px;
 }
-.steps p {
+.step-text h4 {
+  font-size: 26px;
+  line-height: 1.5;
+  color: #024e76;
+}
+.step-text p {
   color: #39a6b2;
-  font-size: 23px;
+  font-size: 18px;
 }
-.steps span {
-  font-size: 38px;
-}
+
 .trainers {
-text-align: center;
-}
-.trainer {
   width: 900px;
   margin: 0 auto 30px auto;
   background: #024e76;
@@ -213,7 +229,7 @@ text-align: center;
   line-height: 1.3;
 }
 .contact {
-  text-align: center;
+  
   background: #024e76;
 }
 .contact h2 {
@@ -243,4 +259,7 @@ text-align: center;
 }
 .contact-info a {
   color: #fce138;
+}
+.flex-row {
+  display: flex;
 }
